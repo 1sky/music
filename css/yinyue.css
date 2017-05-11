@@ -1,0 +1,744 @@
+@charset "UTF-8";
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 15px;
+  font-family: "微软雅黑";
+  border: 0px;
+}
+
+* {
+  font-family: "微软雅黑";
+  box-sizing: border-box;
+  outline: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: 'iconfont';
+}
+
+.iconfont {
+  font-family: 'iconfont';
+}
+
+ul, li, ol, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 96px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 109.86667px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 110.4px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 160px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 170.66667px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 204.8px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 213.33333px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 341.33333px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 384px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 426.66667px;
+  }
+}
+
+body {
+  overflow: hidden;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #FDFDFE;
+  transform: translateY(100%);
+  transition: all 1s;
+  z-index: 10;
+}
+
+.box .beijing {
+  width: 99.51%;
+  height: 100%;
+}
+
+.box .yinying {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box .lyric {
+  width: 80%;
+  height: 70%;
+  position: absolute;
+  left: 10%;
+  top: 8%;
+  color: #A7A3A3;
+  overflow: hidden;
+}
+
+.box .lyric .asd {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
+  text-align: center;
+  color: #D3D3D3;
+  line-height: 30px;
+  transition: all 288s;
+}
+
+.box .lyric .zhezhao {
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to bottom, #000, #434340);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+}
+
+.box .a {
+  color: #B0AFB0;
+  font-size: 40px;
+  position: absolute;
+  left: 0.05rem;
+  top: 0.15rem;
+}
+
+.box .b {
+  color: #B0AFB0;
+  font-size: 25px;
+  position: absolute;
+  right: 0.1rem;
+  top: 0.15rem;
+}
+
+.box .c {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: #B0AFB0;
+}
+
+.box .c .quan {
+  width: 0.14rem;
+  height: 0.14rem;
+  border-radius: 50%;
+  background: #1CA0EF;
+  position: absolute;
+  left: 0;
+  top: -0.06rem;
+}
+
+.box .time {
+  position: absolute;
+  bottom: 1.1rem;
+  left: 0.05rem;
+  color: #A5A4A5;
+}
+
+.box .time2 {
+  position: absolute;
+  bottom: 1.1rem;
+  right: 0.05rem;
+  color: #A5A4A5;
+}
+
+.box .d {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 45%;
+  color: #1CA0EF;
+  font-size: 45px;
+}
+
+.box .gg {
+  position: absolute;
+  bottom: 0.43rem;
+  left: 44.3%;
+  color: #1CA0EF;
+  font-size: 50px;
+  display: none;
+}
+
+.box .e {
+  position: absolute;
+  bottom: 1.35rem;
+  left: 0.08rem;
+  color: #B9B9B9;
+  font-size: 20px;
+}
+
+.box .f {
+  position: absolute;
+  bottom: 1.35rem;
+  right: 0.08rem;
+  color: #B9B9B9;
+  font-size: 20px;
+}
+
+.box .g {
+  position: absolute;
+  bottom: 0.52rem;
+  right: 24%;
+  color: #1CA0EF;
+  font-size: 35px;
+}
+
+.box .h {
+  position: absolute;
+  bottom: 0.54rem;
+  left: 25%;
+  color: #1CA0EF;
+  font-size: 35px;
+  transform: rotate(180deg);
+}
+
+.box .j {
+  position: absolute;
+  bottom: 0.61rem;
+  left: 0.2rem;
+  color: #1CA0EF;
+  font-size: 25px;
+}
+
+.box .k {
+  position: absolute;
+  bottom: 0.61rem;
+  right: 0.2rem;
+  color: #1CA0EF;
+  font-size: 25px;
+}
+
+.box .l {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0.3rem;
+  color: #B9B9B9;
+}
+
+.box .m {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 1.05rem;
+  color: #B9B9B9;
+  font-size: 20px;
+}
+
+.box .n {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 1.8rem;
+  color: #B9B9B9;
+  font-size: 20px;
+}
+
+.box .o {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 2.55rem;
+  color: #B9B9B9;
+  font-size: 20px;
+}
+
+.box .p {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 3.25rem;
+  color: #B9B9B9;
+  font-size: 20px;
+}
+
+.box .xiala {
+  width: 100%;
+  height: 45%;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: -45%;
+  left: 0;
+  transition: all 1s;
+  z-index: 100000;
+}
+
+.box .xiala .aa {
+  width: 1rem;
+  height: 1rem;
+  background: #000;
+  float: left;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+  text-align: center;
+  position: relative;
+}
+
+.box .xiala .aa .aaa {
+  color: #fff;
+  font-size: 40px;
+  line-height: 1rem;
+}
+
+.box .xiala .aa .ci {
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+}
+
+.box .xiala .aa .bbb {
+  color: #fff;
+  font-size: 40px;
+  line-height: 1rem;
+}
+
+.box .xiala .aa .ccc {
+  color: #fff;
+  font-size: 40px;
+  line-height: 1rem;
+}
+
+.box .xiala .quxiao {
+  width: 100%;
+  height: 0.4rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #525252;
+  text-align: center;
+}
+
+.box .xiala .quxiao .fff {
+  line-height: 0.4rem;
+  color: #fff;
+  font-size: 12px;
+}
+
+.xiao {
+  width: 100%;
+  height: 0.7rem;
+  background: #DBDBDB;
+  position: absolute;
+  left: 0;
+  bottom: 0rem;
+  transition: all 1s;
+  z-index: 20;
+}
+
+.xiao .aa {
+  width: 0.7rem;
+  height: 0.7rem;
+  float: left;
+}
+
+.xiao .geming {
+  position: absolute;
+  top: 0.12rem;
+  left: 0.9rem;
+  color: #000;
+  font-size: 14px;
+}
+
+.xiao .yanchang {
+  position: absolute;
+  bottom: 0.12rem;
+  left: 0.9rem;
+  color: #000;
+  font-size: 12px;
+}
+
+.xiao .bb {
+  position: absolute;
+  left: 2.5rem;
+  top: 0.2rem;
+  font-size: 25px;
+  color: #1CA0EF;
+}
+
+.xiao .kk {
+  position: absolute;
+  left: 2.485rem;
+  top: 0.2rem;
+  font-size: 29px;
+  color: #1CA0EF;
+  display: none;
+}
+
+.xiao .cc {
+  position: absolute;
+  left: 2.95rem;
+  top: 0.19rem;
+  font-size: 30px;
+  color: #1CA0EF;
+}
+
+.xiao .dd {
+  position: absolute;
+  right: 0.05rem;
+  top: 0.2rem;
+  font-size: 25px;
+  color: #1CA0EF;
+}
+
+.list {
+  width: 100%;
+  height: 1.8rem;
+  background: #DEDEDE;
+  position: absolute;
+  bottom: -1.8rem;
+  left: 0;
+  transition: all 1s;
+  z-index: 1000000000000000;
+}
+
+.list .la {
+  width: 100%;
+  height: 0.4rem;
+  color: #000;
+  line-height: 0.4rem;
+  padding-left: 0.2rem;
+}
+
+.list .lb {
+  width: 100%;
+  height: 0.35rem;
+  color: #000;
+  line-height: 0.35rem;
+  padding-left: 0.2rem;
+}
+
+.list .di {
+  width: 100%;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0.1rem;
+}
+
+.gong {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.gong .top {
+  width: 100%;
+  height: 0.6rem;
+  background: #1CA0EF;
+  position: relative;
+}
+
+.gong .top .a {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0.1rem;
+}
+
+.gong .top .cu {
+  font-weight: bold;
+}
+
+.gong .top .b {
+  color: #fff;
+  font-size: 17px;
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0.7rem;
+}
+
+.gong .top .c {
+  color: #fff;
+  font-size: 17px;
+  position: absolute;
+  bottom: 0.1rem;
+  left: 1.6rem;
+}
+
+.gong .top .ddd {
+  color: #fff;
+  font-size: 17px;
+  position: absolute;
+  bottom: 0.1rem;
+  left: 2.5rem;
+}
+
+.gong .top .e {
+  position: absolute;
+  bottom: 0.09rem;
+  right: 0.1rem;
+  font-size: 21px;
+  color: #fff;
+}
+
+.gong .nav {
+  width: 100%;
+  height: 0.4rem;
+  background: #fff;
+}
+
+.gong .nav .a {
+  font-size: 15px;
+  color: #000;
+  margin-left: 0.225rem;
+  line-height: 0.4rem;
+}
+
+.gong .nav .a:nth-child(1) {
+  margin-left: 0.1rem;
+}
+
+.gong .nav .hong {
+  color: #1CA0EF;
+}
+
+.gong .banner {
+  width: 100%;
+  height: 1.2rem;
+  background: #fff;
+}
+
+.gong .banner .a {
+  width: 100%;
+  height: 100%;
+}
+
+.gong .zhong {
+  width: 100%;
+  height: 0.5rem;
+}
+
+.gong .zhong .a {
+  width: 100%;
+  height: 100%;
+}
+
+.gong .xia {
+  width: 100%;
+  height: 3.2rem;
+}
+
+.gong .xia .a {
+  width: 100%;
+  height: 100%;
+}
+
+.gong .qw {
+  display: none;
+}
+
+.gong .qw2 {
+  position: absolute;
+  top: 0.6rem;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+.gong .qw2 .ab {
+  width: 100%;
+  background: #fff;
+  height: 0.6rem;
+  position: relative;
+}
+
+.gong .qw2 .ab .a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.gong .qw2 .ac {
+  width: 100%;
+  background: #fff;
+  height: 1.5rem;
+  border-top: 5px solid #F2F2F2;
+  position: relative;
+}
+
+.gong .qw2 .ac .ad {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.gong .qw2 .ae {
+  width: 100%;
+  background: #fff;
+  height: 0.5rem;
+  border-top: 5px solid #F2F2F2;
+  position: relative;
+}
+
+.gong .qw2 .ae .a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.gong .qw2 .af {
+  width: 100%;
+  background: #F9F9F9;
+  height: 0.5rem;
+  border-top: 5px solid #F2F2F2;
+  position: relative;
+}
+
+.gong .qw2 .af .a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.gong .qw2 .ag {
+  width: 100%;
+  background: #fff;
+  height: 1.4rem;
+  position: relative;
+}
+
+.gong .qw2 .ag .a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 95%;
+}
+
+.gong .qw2 .ah {
+  width: 100%;
+  background: #F9F9F9;
+  height: 0.5rem;
+  border-top: 5px solid #F2F2F2;
+  position: relative;
+}
+
+.gong .qw2 .ah .a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.gong .block {
+  display: block;
+}
+
+.gong .qw3 {
+  position: absolute;
+  top: 0.6rem;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+
+.gong .qw3 .a {
+  width: 100%;
+}
+
+.flash {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+}
+
+.flash .dd {
+  width: 100%;
+  height: 100%;
+}

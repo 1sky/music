@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name='viewport' content="width=device-width"/>
+		<title></title>
+		<script src='js/jquery.js'></script>
+		<link rel="stylesheet" href="css/yinyue.css" />
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_u969vz9o5437hkt9.css" />
+		<script src='js/yinyue.js'></script>
+	</head>
+	<body>
+		<audio id="audio"  src="music/三寸天堂.mp3" ></audio>
+		
+		<!--界面-->
+		<div class="box">
+			<div class="bei">
+				<img src="img/7.jpg" alt="" class="beijing" />
+			</div>
+			
+			<div class="yinying"></div>
+			<span class="iconfont a">&#xe602;</span> <!--向下箭头-->
+			<span class="iconfont b">&#xe648;</span>	<!--分享-->
+			<div class="c" id='jindu'>		<!--进度条-->
+				<div class="quan"></div>
+			</div>
+			<div class="time">0:00</div>
+			<div class="time2"></div>
+			<span class="iconfont d">&#xe635;</span> <!--播放-->
+			<span class="iconfont gg">&#xe63a;</span> <!--暂停-->
+			<span class="iconfont e">&#xe690;</span> <!--话筒-->
+			<span class="iconfont f">&#xe67a;</span> <!--设置-->
+			<span class="iconfont g" id='shang'>&#xe64e;</span> <!--右下一曲-->
+			<span class="iconfont h" id='xia'>&#xe64e;</span> <!--左下一曲-->
+			<span class="iconfont j">&#xe6f2;</span> <!--循环-->
+			<span class="iconfont k" id='mulu2'>&#xe62d;</span> <!--目录-->
+			<span class="iconfont l">&#xe624;</span> <!--收藏-->
+			<span class="iconfont m">&#xe636;</span> <!--下载-->
+			<span class="iconfont n">&#xe637;</span> <!--个人中心-->
+			<span class="iconfont o">&#xe638;</span> <!--对话框-->
+			<span class="iconfont p">&#xe644;</span> <!--三个点-->
+			<div class="xiala">
+				<div class="aa">
+					<span class="iconfont aaa">&#xe621;</span>
+					<span class="ci">词</span>
+				</div>
+				<div class="aa">
+					<span class="bbb">Aa</span>
+				</div>
+				<div class="aa">
+					<span class="iconfont ccc">&#xe710;</span>
+				</div>
+				<div class="aa">
+					<span class="iconfont aaa">&#xe621;</span>
+					<span class="ci">图</span>
+				</div>
+				<div class="aa">
+					<span class="iconfont ccc">&#xe651;</span>
+				</div>
+				<div class="aa">
+					<span class="iconfont ccc">&#xe63b;</span>
+				</div>
+				<div class="quxiao">
+					<span class="fff">取消</span>
+				</div>
+			</div>
+			<div class="lyric">
+				<!--<div class="lyric_tit" id="lyric_tit"></div>
+				<div class="lyric_con" id="lyric_con"><div id="lyric_txt"></div></div>-->
+				<div class="asd"><pre>
+绅士 - 薛之谦
+词：薛之谦
+曲：薛之谦
+好久没见了什么角色呢
+细心装扮着
+白色衬衫的袖扣是你送的
+尽量表现着像不在意的
+频繁暴露了自欺欺人者
+越掩饰越深刻
+你说我说听说
+忍着言不由衷的段落
+我反正决定自己难过
+我想摸你的头发
+只是简单的试探啊
+我想给你个拥抱
+像以前一样可以吗
+你退半步的动作认真的吗
+小小的动作伤害还那么大
+我只能扮演个绅士
+才能和你说说话
+我能送你回家吗
+可能外面要下雨啦
+我能给你个拥抱
+像朋友一样可以吗
+我忍不住从背后抱了一下
+尺度掌握在不能说想你啊
+你就当刚认识的绅士
+闹了个笑话吧
+尽量表现着善解人意的
+频繁暴露了不欲人知的
+越掩饰越深刻
+想说听说别说
+忍着言不由衷的段落
+我反正注定留在角落
+我想摸你的头发
+只是简单的试探啊
+我想给你个拥抱
+像以前一样可以吗
+你退半步的动作认真的吗
+小小的动作伤害还那么大
+我只能扮演个绅士
+才能和你说说话
+我能送你回家吗
+可能外面要下雨啦
+我能给你个拥抱
+像朋友一样可以吗
+我忍不住从背后抱了一下
+尺度掌握在不能说想你啊
+你就当刚认识的绅士
+闹了个笑话吧
+你能给我只左手
+牵你到马路那头吗
+我会像以前一样
+看着来往的车子啊
+我们的距离在眉间皱了下
+迅速还原成路人的样子啊
+越有礼貌我越害怕
+绅士要放得下
+				</pre></div>
+				<!--<div class="zhezhao"></div>
+				<div class="zhezhao2"></div>-->
+			</div>
+		</div>
+		<!--播放小窗口-->
+		<div class="xiao">
+			<div id="touxiang">
+				<img src="img/9.png" alt="" class="aa"/>
+			</div>
+			
+			<span class="geming">三寸天堂</span>
+			<span class="yanchang">严艺丹</span>
+			<span class="iconfont bb">&#xe635;</span> <!--播放-->
+			<span class="iconfont kk">&#xe63a;</span> <!--暂停-->
+			<span class="iconfont cc" id='xia2'>&#xe64e;</span> <!--右下一曲-->
+			<span class="iconfont dd" id='mulu'>&#xe639;</span> <!--播放目录-->
+			
+		</div>
+		<div class="list">
+				<div class="la">
+					<span class="a1">播放队列</span>
+				</div>
+				<div class="lb">
+					<span class="a1">三寸天堂 - 严艺丹</span>
+				</div>
+				<div class="lb">
+					<span class="al">难道 - 苏立生</span>
+				</div>
+				<div class="lb">
+					<span class="al">绅士 - 薛之谦</span>
+				</div>
+				<div class="di" id='guanbi'>
+					<span class="a2">关闭</span>
+				</div>
+			</div>
+		<!--功能大全-->
+		<div class="gong">
+			<div class="top">
+				<span class="iconfont a">&#xe621;</span>
+				<span class="b rr">我的</span>
+				<span class="c rr cu">乐库</span>
+				<span class="ddd rr">歌唱</span>
+				<span class="iconfont e">&#xe650;</span>
+			</div>
+			
+			<div class="qw2 we">
+
+				<div class="ab">
+					<img src="img/21.png" alt="" class="a" />
+				</div>
+				<div class="ac">
+					<img src="img/22.png" alt="" class="ad" />
+				</div>
+				<div class="ae">
+					<img src="img/23.png" alt="" class="a" />
+				</div>
+				<div class="af">
+					<img src="img/24.png" alt="" class="a" />
+				</div>
+				<div class="ag">
+					<img src="img/25.png" alt="" class="a" />
+				</div>
+				<div class="ah">
+					<img src="img/26.png" alt="" class="a" />
+				</div>
+			</div>
+			<div class="qw we block">
+				
+			
+				<div class="nav">
+					<span class="a uuu hong">推荐</span>
+					<span class="a uuu">分类</span>
+					<span class="a uuu">排行</span>
+					<span class="a uuu">歌手</span>
+					<span class="a uuu">电台</span>
+					<span class="a uuu">MV</span>
+					<span class="iconfont a">&#xe64a;</span>
+				</div>
+				<div class="banner">
+					<img src="img/10.png" alt="" class="a" />
+				</div>
+				<div class="zhong">
+					<img src="img/11.PNG" alt="" class="a" />
+				</div>
+				<div class="xia">
+					<img src="img/12.png" alt="" class="a" />
+				</div>
+			</div>
+			<div class="qw3 we">
+				<img src="img/27.png" alt="" class="a" />
+			</div>
+		</div>
+		<!--闪屏-->
+		<div class="flash">
+			<img src="img/2.PNG" alt="" class="dd" />
+		</div>
+	</body>
+	
+</html>
+<script src='js/irc.js'></script>
